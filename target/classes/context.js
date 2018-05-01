@@ -2,7 +2,7 @@
     {
         "className": "io.zensoft.context.service.json.DefaultCoffeeService",
         "id": "coffeeService",
-        "properties": [
+        "constructorArgs": [
             {
                 "name": "coffee",
                 "value": "Coffee"
@@ -12,7 +12,7 @@
     {
         "className": "io.zensoft.context.service.json.DefaultJuiceService",
         "id": "juiceService",
-        "properties": [
+        "constructorArgs": [
             {
                 "name": "juice",
                 "value": "Apple Juice"

@@ -1,20 +1,23 @@
 package io.zensoft.context.model
 
-import com.fasterxml.jackson.annotation.JsonProperty
 /**
- * Created by esuyorkulov on 2/20/18.
+ * @author esuyorkulov on 2/20/18.
  */
-data class JsonBeanModel(@JsonProperty("className")
-                         val className: String,
-                         @JsonProperty("id")
-                         val id: String,
-                         @JsonProperty("scope")
-                         val scope: String?,
-                         @JsonProperty("isAbstract")
-                         val isAbstract: Boolean?,
-                         @JsonProperty("isLazy")
-                         val isLazy: Boolean?,
-                         @JsonProperty("parent")
-                         val parent: String? = null,
-                         @JsonProperty("properties")
-                         val properties: Collection<JsonBeanModelProperty>)
+data class JsonBeanModel(
+
+        val className: String? = null,
+
+        val id: String? = null,
+
+        val scope: String? = null,
+
+        val isAbstract: Boolean? = null,
+
+        val isLazy: Boolean? = null,
+
+        val parent: String? = null,
+
+        val properties: Collection<JsonBeanModelProperty>? = null,
+
+        val constructorArgs: Collection<JsonBeanModelProperty>? = null
+)
